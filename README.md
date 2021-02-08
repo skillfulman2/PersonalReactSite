@@ -4,10 +4,7 @@ To run locally:
 
 ```
 yarn build
-
 ```
-
-
 ```
 yarn start
 ```
