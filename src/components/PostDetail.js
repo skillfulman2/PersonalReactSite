@@ -12,14 +12,14 @@ const PostDetail = props => {
     window.scrollTo(0,0)
 
     useEffect( () => {
-        firebase.firestore().collection('posts').doc('JkEo4MS2m6j555908A98'/*props.id*/)
+        firebase.firestore().collection('posts').doc(props.id)
             .onSnapshot( snapshot => setPost(snapshot.data()) )
 
     }, [props.id])
 
     useEffect(()=>{
         firebase.firestore().collection('posts')
-            .orderBy('date')
+            .orderBy('text')
             .get()
             .then( posts => {
                 const array = posts.docs.map( p => p.id )
@@ -33,7 +33,7 @@ const PostDetail = props => {
     if(post){
         styles = {
             parallax:{
-                backgroundImage: 'url(' + post.defaultImage + ')',
+                backgroundImage: 'url(' + post.background + ')',
                 height:'100vh',
                 width:'100vw',
                 backgroundAttachment:'fixed',
@@ -63,7 +63,7 @@ const PostDetail = props => {
                     </div>
 
                     <div className='post-images'>                    
-                        {post.defaultImage && <img src={post.defaultImage} alt='hei' />}
+                        {post.background && <img src={post.background} alt='hei' />}
                         {post.displayImage && <img src={post.displayImage} alt='hei' />}
                         {post.detailImage && <img src={post.detailImage} alt='hei' />}
                     </div>                    
