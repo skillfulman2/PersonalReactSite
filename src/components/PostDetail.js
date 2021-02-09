@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
-import firebase from './firebase'
+import firebase from './Firebase'
 import { Link } from "@reach/router"
+/*import { Link } from 'react-router-dom'*/
 import './PostDetail.css'
 import parse from 'html-react-parser'
 const PostDetail = props => {  
@@ -11,7 +12,7 @@ const PostDetail = props => {
     window.scrollTo(0,0)
 
     useEffect( () => {
-        firebase.firestore().collection('posts').doc(props.id)
+        firebase.firestore().collection('posts').doc('JkEo4MS2m6j555908A98'/*props.id*/)
             .onSnapshot( snapshot => setPost(snapshot.data()) )
 
     }, [props.id])
@@ -51,7 +52,7 @@ const PostDetail = props => {
                     <div className='parallax-overlay'>
                         <div>
                             <h1>{post.title}</h1>
-                            <p>{post.date}</p>
+                            {/*<p>{post.date}</p>*/}
                         </div>
                     </div>
                 </div>
@@ -67,7 +68,7 @@ const PostDetail = props => {
                         {post.detailImage && <img src={post.detailImage} alt='hei' />}
                     </div>                    
 
-                    <div>{parse(post.description)}</div>
+                    <div>{parse(post.text)}</div>
                     <div className='post-features'>
                         <ul>
                         {post.javascript && <li>Javascript</li>}
@@ -79,7 +80,7 @@ const PostDetail = props => {
                 </div>
             </div>
             :
-            <h2 style={{width:'100vw',textAlign:'center'}}>Fetching post, hold on...</h2>
+            <h2 style={{width:'100vw',textAlign:'center'}}>Why is this not workinFetching post, hold on...</h2>
             }
         </main>
     )

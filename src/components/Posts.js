@@ -11,7 +11,7 @@ const Posts = (props) => {
         Firebase
             .firestore()
             .collection('posts')
-            .orderBy('year', 'desc')
+            .orderBy('text')
             .onSnapshot(snapshot => 
                 setPosts(snapshot.docs)
             )
@@ -51,7 +51,7 @@ const Posts = (props) => {
             }
         </div>
         :
-            <p>Getting posts, hold on...</p>
+            <p>Why Getting posts, hold on...</p>
         }
         </main>
 

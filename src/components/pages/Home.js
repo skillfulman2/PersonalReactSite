@@ -10,7 +10,6 @@ function Home() {
     <>
       <HeroSection />
       <Cards />
-      <Posts />
       <Footer />
     </>
   );

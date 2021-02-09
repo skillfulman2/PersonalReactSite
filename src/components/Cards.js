@@ -19,7 +19,8 @@ function Cards() {
               src='https://lh3.googleusercontent.com/eWNEpzTRzFRlg5rZokafTO6v5WajKJaXJe0kK5h6tQV6HhCo2Kq9rA-ULjml59IiJuzBU8M8BlxhylNREgNSvJWJp0MWwye-0ZXd_benZ37ZM4jLE_UxoJ09Sa3N-aVgm6SdFzG4=w600'
               text='My iPad Experience'
               label='Adventure'
-              path='/services'
+              /*  path='/services' */ 
+              path='posts/JkEo4MS2m6j555908A98'
             />
           </ul>
           <ul className='cards__items'>
