@@ -6,7 +6,7 @@
 }
 
 .home,
-.posts,
+.projects,
 .about,
 .contact-me{
   display: flex;
@@ -16,7 +16,7 @@
   font-size: 3rem;
 }
 
-.posts{
+.projects{
   background-image: url('/images/stage.png');
   background-position: center;
   background-size: cover;

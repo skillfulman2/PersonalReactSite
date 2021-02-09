@@ -1,0 +1,14 @@
+main.posts{
+    padding:15vh 0;
+}
+.posts-container{
+    display:grid;
+    width:100%;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+
+@media(max-width:600px){
+    .posts-container{
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }    
+}
