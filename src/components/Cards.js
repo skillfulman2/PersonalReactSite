@@ -49,7 +49,7 @@ import CardItem from './CardItem';
             /> */}
             
           </ul>
-          <ul className='cards__items'>
+          {/*<ul className='cards__items'>
             <CardItem
               src='images/img-3.jpg'
               text='Hello World'
@@ -68,7 +68,7 @@ import CardItem from './CardItem';
               label='Adventure'
               path='/sign-up'
             />
-          </ul>
+          </ul>*/}
         </div>
       </div>
     </div>

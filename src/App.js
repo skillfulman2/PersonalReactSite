@@ -34,6 +34,7 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path={'/posts/:id'} component={PostDetail} />
+          {/*<PostDetail path={'/posts/:id'} />*/}
           <Route path='/projects' component={Posts}/>
           <Route path='/about' component={About} />
           <Route path='/contact-me' component={ContactMe} />

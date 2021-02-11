@@ -1,12 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PostDetail from './PostDetail';
 
 const CardItem = (props) => {
+
+  console.log(props.id + 'next doc = ' + props.next)
   return (
     
       <li className='cards__item'>
         <Link className='cards__item__link' to={'/posts/' + props.id}>
           <figure className='cards__item__pic-wrap' data-category={props.post.label}>
+            
             <img
               className='cards__item__img'
               alt='Travel Image'

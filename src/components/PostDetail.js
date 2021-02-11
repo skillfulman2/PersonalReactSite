@@ -1,18 +1,26 @@
 import React, {useEffect, useState} from 'react'
 import firebase from './Firebase'
-import { Link } from "@reach/router"
-/*import { Link } from 'react-router-dom'*/
+import { Link } from 'react-router-dom'
 import './PostDetail.css'
 import parse from 'html-react-parser'
-const PostDetail = props => {  
+
+const PostDetail = (props) => { 
+    
     const [post, setPost] = useState()
     const [prev, setPrev] = useState(0)
     const [next, setNext] = useState(0)
+    console.log('-----------------')
+    console.log(props)
+    console.log('-----------------')
+    console.log('hello')
+    console.log(props.id)
+    console.log(post)
+    console.log(useState(0).toString())
 
     window.scrollTo(0,0)
 
     useEffect( () => {
-        firebase.firestore().collection('posts').doc(props.id)
+        firebase.firestore().collection('posts').doc(props.match.params.id)
             .onSnapshot( snapshot => setPost(snapshot.data()) )
 
     }, [props.id])
@@ -23,11 +31,11 @@ const PostDetail = props => {
             .get()
             .then( posts => {
                 const array = posts.docs.map( p => p.id )
-                const myPos = array.indexOf(props.id)
+                const myPos = array.indexOf(props.match.params.id)
                 setNext( myPos + 1 === array.length ? array[0] : array[myPos + 1])
                 setPrev( myPos === 0 ? array[array.length - 1] : array[myPos - 1])
             } )
-    }, [props.id])
+    }, [props.match.params.id])
 
     let styles = {}
     if(post){
@@ -52,6 +60,7 @@ const PostDetail = props => {
                     <div className='parallax-overlay'>
                         <div>
                             <h1>{post.title}</h1>
+                            <h1>{props.id}</h1>
                             {/*<p>{post.date}</p>*/}
                         </div>
                     </div>
@@ -68,7 +77,7 @@ const PostDetail = props => {
                         {post.detailImage && <img src={post.detailImage} alt='hei' />}
                     </div>                    
 
-                    <div>{parse(post.text)}</div>
+                    <div>{parse(post.text)}{props.id}</div>
                     <div className='post-features'>
                         <ul>
                         {post.javascript && <li>Javascript</li>}
@@ -80,7 +89,7 @@ const PostDetail = props => {
                 </div>
             </div>
             :
-            <h2 style={{width:'100vw',textAlign:'center'}}>Why is this not workinFetching post, hold on...</h2>
+            <h2 style={{width:'100vw',textAlign:'center'}}>Fetching post, hold on...</h2>
             }
         </main>
     )
