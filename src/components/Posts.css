@@ -1,6 +1,6 @@
-/*main.posts{
-    padding:15vh 0;
-}*/
+main.posts{
+    padding:0vh 0;
+}
 .posts-container{
     display:grid;
     width:100%;

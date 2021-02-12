@@ -34,10 +34,9 @@ function Footer() {
         </div>
         <div class="footer-link-items">
           <h2>Social Media</h2>
-          <Link to="/">Instagram</Link>
-          <Link to="/">Facebook</Link>
-          <Link to="/">Youtube</Link>
-          <Link to="/">Twitter</Link>
+          <a href="https://www.instagram.com/ryanremaly/">Instagram</a>
+          <a href="https://www.facebook.com/ryan.remaly/">Facebook</a>
+          <a href="https://twitter.com/RyanRemaly/">Twitter</a>
         </div>
       </div>
       <section class="social-media">
