@@ -10,8 +10,8 @@ import CardItem from './CardItem';
         Firebase
             .firestore()
             .collection('posts')
-            .orderBy('text')
-            .limit(5)
+            .orderBy('date', 'desc')
+            .limit(2)
             .onSnapshot(snapshot => 
                 setPosts(snapshot.docs)
             )

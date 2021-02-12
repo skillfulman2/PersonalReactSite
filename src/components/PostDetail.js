@@ -15,6 +15,7 @@ const PostDetail = (props) => {
     console.log('hello')
     console.log(props.id)
     console.log(post)
+    console.log(prev)
     console.log(useState(0).toString())
 
     window.scrollTo(0,0)

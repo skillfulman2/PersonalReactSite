@@ -5,6 +5,7 @@ import PostDetail from './PostDetail';
 const CardItem = (props) => {
 
   console.log(props.id + 'next doc = ' + props.next)
+  console.log(props.post)
   return (
     
       <li className='cards__item'>
