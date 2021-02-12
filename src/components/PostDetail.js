@@ -24,7 +24,7 @@ const PostDetail = (props) => {
         firebase.firestore().collection('posts').doc(props.match.params.id)
             .onSnapshot( snapshot => setPost(snapshot.data()) )
 
-    }, [props.id])
+    }, [props.match.params.id])
 
     useEffect(()=>{
         firebase.firestore().collection('posts')

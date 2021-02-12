@@ -1,11 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PostDetail from './PostDetail';
 
 const CardItem = (props) => {
 
-  console.log(props.id + 'next doc = ' + props.next)
-  console.log(props.post)
   return (
     
       <li className='cards__item'>
@@ -14,7 +11,7 @@ const CardItem = (props) => {
             
             <img
               className='cards__item__img'
-              alt='Travel Image'
+              alt='Travel'
               src={props.post.background}
             />
           </figure>

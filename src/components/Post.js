@@ -1,7 +1,5 @@
 import React from "react";
-import Firebase from "./Firebase";
 import { Link } from "react-router-dom";
-import { navigate } from "@reach/router";
 import "./Post.css";
 
 const Post = (props) => {
