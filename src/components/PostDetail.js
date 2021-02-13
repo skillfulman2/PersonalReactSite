@@ -2,9 +2,12 @@ import React, {useEffect, useState} from 'react'
 import firebase from './Firebase'
 import { Link } from 'react-router-dom'
 import './PostDetail.css'
-import parse from 'html-react-parser'
+import ReactMarkdown from 'react-markdown'
+
+
 
 const PostDetail = (props) => { 
+    /*import parse from 'html-react-parser'*/
     
     const [post, setPost] = useState()
     const [prev, setPrev] = useState(0)
@@ -61,7 +64,6 @@ const PostDetail = (props) => {
                     <div className='parallax-overlay'>
                         <div>
                             <h1>{post.title}</h1>
-                            <h1>{props.id}</h1>
                             {/*<p>{post.date}</p>*/}
                         </div>
                     </div>
@@ -73,12 +75,12 @@ const PostDetail = (props) => {
                     </div>
 
                     <div className='post-images'>                    
-                        {post.background && <img src={post.background} alt='hei' />}
+                        {/*post.background && <img src={post.background} alt='hei' />}
                         {post.displayImage && <img src={post.displayImage} alt='hei' />}
-                        {post.detailImage && <img src={post.detailImage} alt='hei' />}
+            {post.detailImage && <img src={post.detailImage} alt='hei' />*/}
                     </div>                    
-
-                    <div>{parse(post.text)}{props.id}</div>
+                    <ReactMarkdown source={post.text} />
+                    {/*<div>{parse(post.text)}</div>*/}
                     <div className='post-features'>
                         <ul>
                         {post.javascript && <li>Javascript</li>}
