@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import firebase from './Firebase'
 import { Link } from 'react-router-dom'
 import './PostDetail.css'
-import ReactMarkdown from 'react-markdown'
+import ReactMarkdownWithHtml from 'react-markdown'
 
 
 
@@ -79,7 +79,7 @@ const PostDetail = (props) => {
                         {post.displayImage && <img src={post.displayImage} alt='hei' />}
             {post.detailImage && <img src={post.detailImage} alt='hei' />*/}
                     </div>                    
-                    <ReactMarkdown source={post.text} />
+                    <ReactMarkdownWithHtml children={post.text} allowDangerousHtml />
                     {/*<div>{parse(post.text)}</div>*/}
                     <div className='post-features'>
                         <ul>
