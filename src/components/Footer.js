@@ -29,7 +29,7 @@ function Footer() {
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
             <h2>Contact Me</h2>
-            <Link to="mailto:remalyryan@gmail.com">remalyryan@gmail.com</Link>
+            <a href="mailto:ryan@globalgaming.dev">ryan@globalgaming.dev</a>
           </div>
         </div>
         <div class="footer-link-items">
@@ -71,6 +71,16 @@ function Footer() {
               {" "}
               <i class="fab fa-instagram" />
             </a>
+
+            <a
+              class="social-icon-link medium"
+              href="https://ryanremaly.medium.com"
+            >
+              {" "}
+              <i class="fab fa-medium"></i>
+            </a>
+
+            
 
             {/* Gonna leave this here for when my youtube career takes off
              <Link
