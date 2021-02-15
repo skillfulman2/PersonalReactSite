@@ -35,4 +35,17 @@
   }
   
   @media screen and (max-width: 768px) {
+    .aboutDetail-container {
+        column-count: 1;
+        background-color: #ffffff;
+        padding: 2rem 0 2rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left:2vh;
+        padding-right: 2vh;
+        
+        
+      }
   }

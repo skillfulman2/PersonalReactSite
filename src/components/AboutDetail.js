@@ -24,7 +24,7 @@ function AboutDetail() {
           I'm always happy to talk to new people so if you find anything in a post or code that you have
           questions about feel free to reach out. I am not very active on instagram or facebook so twitter/email is
           probably your best best for a quick response. You'll find all of the various methods of contact below. 
-        </p>
+        </p><br></br>
       </span>
 
       <span>
