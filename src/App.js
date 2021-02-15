@@ -9,6 +9,7 @@ import firebase from './components/Firebase';
 import ContactMe from './components/pages/ContactMe';
 import PostDetail from './components/PostDetail';
 import Posts from './components/Posts';
+import Projects from './components/pages/Projects';
 
 function App() {
   const [signedIn, setSignedIn] = useState(false)
@@ -34,7 +35,8 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path={'/posts/:id'} component={PostDetail} />
           {/*<PostDetail path={'/posts/:id'} />*/}
-          <Route path='/projects' component={Posts}/>
+          <Route path='/projects' component={Projects} />
+          <Route path='/posts' component={Posts}/>
           <Route path='/about' component={About} />
           <Route path='/contact-me' component={ContactMe} />
           <Login path='/login' signedIn={signedIn} />

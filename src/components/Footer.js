@@ -80,17 +80,14 @@ function Footer() {
               <i class="fab fa-medium"></i>
             </a>
 
-            
-
-            {/* Gonna leave this here for when my youtube career takes off
-             <Link
-              class='social-icon-link youtube'
-              to='/'
-              target='_blank'
-              aria-label='Youtube'
+            <Link
+              class="social-icon-link youtube"
+              to="https://www.youtube.com/channel/UCGIXtMTyohuM8ZD1Zpdek0A"
+              target="_blank"
+              aria-label="Youtube"
             >
-              <i class='fab fa-youtube' />
-            </Link> */}
+              <i class="fab fa-youtube" />
+            </Link>
             <a
               class="social-icon-link twitter"
               href="https://twitter.com/RyanRemaly"
