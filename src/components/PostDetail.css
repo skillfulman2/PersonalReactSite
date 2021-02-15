@@ -3,7 +3,17 @@ main.post-detail{
     justify-content: start;
     background:white;
     position:relative;
+    
 }
+
+
+.iframe-container {
+   overflow: hidden;
+  /* 16:9 aspect ratio */
+  padding-top: 56.25%;
+  position: relative;
+}
+
 
 .parallax-overlay{
     background:rgba(0,0,0,.2);
@@ -34,7 +44,10 @@ main.post-detail{
 
 .post-detail .post-content{
     min-height:100vh;
-    padding:20vh;
+    padding-left: 20vh;
+    padding-right: 20vh;
+    padding-top: 5vh;
+    
 }
 
 .post-detail .post-images{
