@@ -34,9 +34,9 @@ function Footer() {
         </div>
         <div class="footer-link-items">
           <h2>Social Media</h2>
-          <a href="https://www.instagram.com/ryanremaly/">Instagram</a>
-          <a href="https://www.facebook.com/ryan.remaly/">Facebook</a>
           <a href="https://twitter.com/RyanRemaly/">Twitter</a>
+          <a href="https://www.facebook.com/ryan.remaly/">Facebook</a>
+          <a href="https://www.instagram.com/ryanremaly/">Instagram</a>
         </div>
       </div>
       <section class="social-media">
@@ -50,26 +50,11 @@ function Footer() {
           <small class="website-built">Site built with react and GCP</small>
           <div class="social-icons">
             <a
-              class="social-icon-link facebook"
-              href="https://www.facebook.com/ryan.remaly/"
-            >
-              {" "}
-              <i class="fab fa-facebook" />
-            </a>
-            <a
               class="social-icon-link github"
               href="https://github.com/skillfulman2"
             >
               {" "}
               <i class="fab fa-github" />
-            </a>
-
-            <a
-              class="social-icon-link instagram"
-              href="https://www.instagram.com/ryanremaly/"
-            >
-              {" "}
-              <i class="fab fa-instagram" />
             </a>
 
             <a
@@ -80,14 +65,22 @@ function Footer() {
               <i class="fab fa-medium"></i>
             </a>
 
-            <Link
+            <a
               class="social-icon-link youtube"
-              to="https://www.youtube.com/channel/UCGIXtMTyohuM8ZD1Zpdek0A"
-              target="_blank"
-              aria-label="Youtube"
+              href="https://www.youtube.com/channel/UCGIXtMTyohuM8ZD1Zpdek0A"
             >
-              <i class="fab fa-youtube" />
-            </Link>
+              {" "}
+              <i class="fab fa-youtube"></i>
+            </a>
+
+            <a
+              class="social-icon-link linkedin"
+              href="https://www.linkedin.com/in/ryan-remaly-24148211a/"
+            >
+              {" "}
+              <i class="fab fa-linkedin" />
+            </a>
+
             <a
               class="social-icon-link twitter"
               href="https://twitter.com/RyanRemaly"
@@ -95,12 +88,21 @@ function Footer() {
               {" "}
               <i class="fab fa-twitter" />
             </a>
+
             <a
-              class="social-icon-link linkedin"
-              href="https://www.linkedin.com/in/ryan-remaly-24148211a/"
+              class="social-icon-link facebook"
+              href="https://www.facebook.com/ryan.remaly/"
             >
               {" "}
-              <i class="fab fa-linkedin" />
+              <i class="fab fa-facebook" />
+            </a>
+
+            <a
+              class="social-icon-link instagram"
+              href="https://www.instagram.com/ryanremaly/"
+            >
+              {" "}
+              <i class="fab fa-instagram" />
             </a>
           </div>
         </div>

@@ -1,13 +1,42 @@
 .chartItem {
-    width: 50%;
-    float: left;
+  width: 50%;
+  float: left;
+  padding: 1vh;
+}
+
+.projects-section {
+  column-count: 2;
+  padding: 5vh;
+  border-bottom: 1px solid #fff;
+}
+
+.projects-section img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.projects-section p {
+    color: #fff;
+}
+
+.projects-section h2 {
+    color: #fff;
+}
+
+.projectsHeader {
+  color: #fff;
 }
 
 @media screen and (max-width: 768px) {
-    .chartItem {
-        width: 100%;
-        float: left;
-        
-        
-      }
+  .chartItem {
+    width: 100%;
+    float: left;
   }
+
+  .projects-section {
+    column-count: 1;
+    padding: 1vh;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+  }
+}
