@@ -22,67 +22,72 @@ export default function Projects() {
         </div>
       </span>
 
-      <div className="projects-section">
-        <span>
-          <a href="https://lh3.googleusercontent.com/68m33NHsR8ZbKPd2BJMZ9rkjeucK2wSwj4_CV_jQXwzj0OurwZs9LUJMKxfXQCh8UfWCkeBvcfsZVQ9ZzSuT24I1w3jW1ZcqL_w4CFbxaU-d2lzeAyhLwY3uQSrEXwozimoAMgBk5A=w2400?source=screenshot.guru">
-            {" "}
-            <img
-              src="https://lh3.googleusercontent.com/68m33NHsR8ZbKPd2BJMZ9rkjeucK2wSwj4_CV_jQXwzj0OurwZs9LUJMKxfXQCh8UfWCkeBvcfsZVQ9ZzSuT24I1w3jW1ZcqL_w4CFbxaU-d2lzeAyhLwY3uQSrEXwozimoAMgBk5A=w600-h315-p-k"
-              alt="agVisionHelper"
-            />{" "}
-          </a>
-        </span>
+      <div className="projects-row">
+        <div className="projects-section">
+          <span>
+            <a href="https://lh3.googleusercontent.com/68m33NHsR8ZbKPd2BJMZ9rkjeucK2wSwj4_CV_jQXwzj0OurwZs9LUJMKxfXQCh8UfWCkeBvcfsZVQ9ZzSuT24I1w3jW1ZcqL_w4CFbxaU-d2lzeAyhLwY3uQSrEXwozimoAMgBk5A=w2400?source=screenshot.guru">
+              {" "}
+              <img
+                src="https://lh3.googleusercontent.com/68m33NHsR8ZbKPd2BJMZ9rkjeucK2wSwj4_CV_jQXwzj0OurwZs9LUJMKxfXQCh8UfWCkeBvcfsZVQ9ZzSuT24I1w3jW1ZcqL_w4CFbxaU-d2lzeAyhLwY3uQSrEXwozimoAMgBk5A=w600-h315-p-k"
+                alt="agVisionHelper"
+              />{" "}
+            </a>
+          </span>
 
-        <span>
-          <h2>AgVision Helper</h2>
-          <br />
-          <p>
-            <b>Tech Stack Used:</b>
-          </p>
-          <p>
-            - Java
+          <span>
+            <h2>AgVision Helper</h2>
             <br />
-            - mySQL
-            <br />- Jasper Reports
-          </p>
-          <br />
-          <p>Reduced export documentation generation time by 90%</p>
-          <p>
-            Parsed data from .csv every 5 minutes and put them into the database
-          </p>
-          <p>
-            Data from mySQL was put into a google charts dashboard for data
-            visualization
-          </p>
-        </span>
+            <p>
+              <b>Tech Stack Used:</b>
+            </p>
+            <p>
+              - Java
+              <br />
+              - mySQL
+              <br />- Jasper Reports
+            </p>
+            <br />
+            <p>Reduced export documentation generation time by 90%</p>
+            <p>
+              Parsed data from .csv every 5 minutes and put them into the
+              database
+            </p>
+            <p>
+              Data from mySQL was put into a google charts dashboard for data
+              visualization
+            </p>
+          </span>
+        </div>
       </div>
 
-      <div className="projects-section">
-        <a href="https://lh3.googleusercontent.com/edQfK9BC6eZXLQqmH045E4AS60INbzMbHi5MatDlv8q642Yu1mrxKC3fVhIMa7pA1j7ScNO3pRAkyyscBceA36_2eHt2iZLBbOgM4b3H_jmF1m18PuzJCzQeLrpLRAnUoZPMVjCDtg=w300?source=screenshot.guru">
-          {" "}
-          <img
-            src="https://lh3.googleusercontent.com/edQfK9BC6eZXLQqmH045E4AS60INbzMbHi5MatDlv8q642Yu1mrxKC3fVhIMa7pA1j7ScNO3pRAkyyscBceA36_2eHt2iZLBbOgM4b3H_jmF1m18PuzJCzQeLrpLRAnUoZPMVjCDtg=w600-h315-p-k"
-            alt="globalGaming"
-          />{" "}
-        </a>
-        <span>
-          <h2>Global Gaming</h2>
-          <br />
-          <p>
-            <b>Tech Stack Used: </b>
-          </p>
-          <p>- Swift/SwiftUI</p>
-          <p>- Firebase for Authentication and user data store</p>
-          <br />
+      <div className="projects-row">
+        <div className="projects-section">
+          <a href="https://lh3.googleusercontent.com/edQfK9BC6eZXLQqmH045E4AS60INbzMbHi5MatDlv8q642Yu1mrxKC3fVhIMa7pA1j7ScNO3pRAkyyscBceA36_2eHt2iZLBbOgM4b3H_jmF1m18PuzJCzQeLrpLRAnUoZPMVjCDtg=w300?source=screenshot.guru">
+            {" "}
+            <img
+              src="https://lh3.googleusercontent.com/edQfK9BC6eZXLQqmH045E4AS60INbzMbHi5MatDlv8q642Yu1mrxKC3fVhIMa7pA1j7ScNO3pRAkyyscBceA36_2eHt2iZLBbOgM4b3H_jmF1m18PuzJCzQeLrpLRAnUoZPMVjCDtg=w600-h315-p-k"
+              alt="globalGaming"
+            />{" "}
+          </a>
+          <span>
+            <h2>Global Gaming</h2>
+            <br />
+            <p>
+              <b>Tech Stack Used: </b>
+            </p>
+            <p>- Swift/SwiftUI</p>
+            <p>- Firebase for Authentication and user data store</p>
+            <br />
 
-          <p>
-            Global Gaming attempted to become the world's first live action game
-            show launched on iOS. I wanted to ship premium subscribers a box of
-            items that would be used to complete a challenge. The person who
-            finished it the fastest while being recorded would be the first
-            winner.
-          </p>
-        </span>
+            <p>
+              Global Gaming attempted to become the world's first live action
+              game show launched on iOS. I wanted to ship premium subscribers a
+              box of items that would be used to complete a challenge. The
+              person who finished it the fastest while being recorded would be
+              the first winner.
+            </p>
+          </span>
+        </div>
       </div>
     </>
   );

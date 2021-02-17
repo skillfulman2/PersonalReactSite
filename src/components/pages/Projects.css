@@ -5,6 +5,7 @@
 }
 
 .projects-section {
+  width: 100%;
   column-count: 2;
   padding: 5vh;
   border-bottom: 1px solid #fff;
