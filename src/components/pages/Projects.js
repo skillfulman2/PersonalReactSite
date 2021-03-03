@@ -34,7 +34,7 @@ export default function Projects() {
             </a>
           </span>
 
-          <span>
+          {/*<span>
             <h2>AgVision Helper</h2>
             <br />
             <p>
@@ -68,7 +68,7 @@ export default function Projects() {
               src="https://lh3.googleusercontent.com/edQfK9BC6eZXLQqmH045E4AS60INbzMbHi5MatDlv8q642Yu1mrxKC3fVhIMa7pA1j7ScNO3pRAkyyscBceA36_2eHt2iZLBbOgM4b3H_jmF1m18PuzJCzQeLrpLRAnUoZPMVjCDtg=w600-h315-p-k"
               alt="globalGaming"
             />{" "}
-          </a>
+          </a>*/}
           <span>
             <h2>Global Gaming</h2>
             <br />
